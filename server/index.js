@@ -9,10 +9,15 @@ const app = express();
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  cors: { origin: 'http://localhost:3000', methods: ['GET', 'POST'] }
+  cors: {
+    origin: ['http://localhost:3000', 'https://ai-code-reviewer-flax-sigma.vercel.app'],
+    methods: ['GET', 'POST']
+  }
 });
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://ai-code-reviewer-flax-sigma.vercel.app']
+}));
 app.use(express.json());
 
 // Attach io to every request
