@@ -15,7 +15,7 @@ const getSeverityColor = (severity) => {
 };
 
 const Team = () => {
-  const { user } = useAuth();
+  const { } = useAuth();
   const [teams, setTeams] = useState([]);
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [selectedSnippet, setSelectedSnippet] = useState(null);
