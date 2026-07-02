@@ -1,0 +1,254 @@
+.page {
+  min-height: 100vh;
+  background: #0f0f1a;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #aaa;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.newBtn {
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.newBtn:hover {
+  background: #4338ca;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filterBtn {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  color: #aaa;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filterBtn:hover {
+  border-color: #4F46E5;
+  color: #4F46E5;
+}
+
+.active {
+  background: #4F46E5;
+  border-color: #4F46E5;
+  color: white !important;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px;
+  color: #aaa;
+}
+
+.splitView {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewCard {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.reviewCard:hover {
+  border-color: #4F46E5;
+}
+
+.selectedCard {
+  border-color: #4F46E5 !important;
+  background: #1a1f3a;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.langBadge {
+  background: #2a2a4a;
+  color: #4F46E5;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cardScore {
+  font-weight: 700;
+  font-size: 14px;
+  flex: 1;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.deleteBtn:hover {
+  opacity: 1;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+
+.detail {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.detailEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #555;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2a2a4a;
+  font-size: 13px;
+}
+
+.summary {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.summary h4 {
+  font-size: 12px;
+  color: #4F46E5;
+  margin-bottom: 8px;
+}
+
+.summary p {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.issuesList h4 {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.issueCard {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.issueTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.issueMsg {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.issueFix {
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.issueFix p {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+  line-height: 1.5;
+}

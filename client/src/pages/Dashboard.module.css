@@ -1,0 +1,195 @@
+.page {
+  min-height: 100vh;
+  background: #0f0f1a;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.statCard {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.statIcon {
+  font-size: 28px;
+}
+
+.statValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: #aaa;
+}
+
+.emptyState h2 {
+  font-size: 20px;
+  color: #fff;
+  margin: 16px 0 8px;
+}
+
+.emptyState p {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.startBtn {
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.startBtn:hover {
+  background: #4338ca;
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.chartCard {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.chartCard h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+.recentSection {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sectionHeader h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.viewAllBtn {
+  background: transparent;
+  border: 1px solid #4F46E5;
+  color: #4F46E5;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.viewAllBtn:hover {
+  background: #4F46E5;
+  color: white;
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.reviewLang {
+  background: #2a2a4a;
+  color: #4F46E5;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  min-width: 80px;
+  text-align: center;
+}
+
+.reviewScore {
+  font-weight: 700;
+  font-size: 15px;
+  min-width: 60px;
+}
+
+.reviewIssues {
+  color: #666;
+  flex: 1;
+}
+
+.reviewDate {
+  color: #555;
+  font-size: 12px;
+}

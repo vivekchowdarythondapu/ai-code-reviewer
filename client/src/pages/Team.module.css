@@ -1,0 +1,417 @@
+.page {
+  min-height: 100vh;
+  background: #0f0f1a;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #aaa;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.actionsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.actionCard {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.actionCard h3 {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #4F46E5;
+}
+
+.primaryBtn {
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.primaryBtn:hover {
+  background: #4338ca;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: #4F46E5;
+  border: 1px solid #4F46E5;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.secondaryBtn:hover {
+  background: #4F46E5;
+  color: white;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 40px;
+  color: #555;
+  font-size: 14px;
+}
+
+.teamsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.teamCard {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.teamCard:hover {
+  border-color: #4F46E5;
+  transform: translateY(-2px);
+}
+
+.teamCard h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.teamCard p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.inviteCodeBadge {
+  background: #2a2a4a;
+  color: #4F46E5;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.teamHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.teamHeader h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  flex: 1;
+}
+
+.backBtn {
+  background: transparent;
+  border: 1px solid #2a2a4a;
+  color: #aaa;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.backBtn:hover {
+  border-color: #4F46E5;
+  color: #4F46E5;
+}
+
+.membersBadge {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  color: #aaa;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.teamMain {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shareCard {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shareCard h3 {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.select {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+}
+
+.textarea {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #fff;
+  font-size: 12px;
+  font-family: monospace;
+  resize: vertical;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: #4F46E5;
+}
+
+.snippetsList h3 {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.snippetCard {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: all 0.2s;
+}
+
+.snippetCard:hover {
+  border-color: #4F46E5;
+}
+
+.selectedSnippet {
+  border-color: #4F46E5 !important;
+  background: #1a1f3a;
+}
+
+.snippetTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.langBadge {
+  background: #2a2a4a;
+  color: #4F46E5;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.rightPanel {
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 500px;
+}
+
+.detailEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: #555;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.snippetDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aiReviewSection h3 {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.summary {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.summary p {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.issuesList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.issueCard {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.issueTop {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.issueMsg {
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.commentsSection {
+  border-top: 1px solid #2a2a4a;
+  padding-top: 16px;
+}
+
+.commentsSection h3 {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.commentCard {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.commentUser {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4F46E5;
+}
+
+.commentTime {
+  font-size: 11px;
+  color: #555;
+}
+
+.commentText {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.commentInput {
+  display: flex;
+  gap: 10px;
+}
